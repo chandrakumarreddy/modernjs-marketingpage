@@ -1,92 +1,36 @@
 import { Helmet } from '@modern-js/runtime/head';
-import './index.css';
+import { Fragment } from 'react';
+// import { Link } from '@modern-js/runtime/router';
 
 const Index = () => (
-  <div className="container-box">
+  <Fragment>
     <Helmet>
       <link
         rel="icon"
         type="image/x-icon"
         href="https://lf3-static.bytednsdoc.com/obj/eden-cn/uhbfnupenuhf/favicon.ico"
       />
+      <title>Marketing page</title>
     </Helmet>
-    <main>
-      <div className="title">
-        Welcome to
-        <img
-          className="logo"
-          src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/modern-js-logo.svg"
-          alt="Modern.js Logo"
-        />
-        <p className="name">Modern.js</p>
-      </div>
-      <p className="description">
-        Get started by editing <code className="code">src/routes/page.tsx</code>
-      </p>
-      <div className="grid">
-        <a
-          href="https://modernjs.dev/guides/get-started/introduction.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card"
-        >
-          <h2>
-            Guide
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-            />
-          </h2>
-          <p>Follow the guides to use all features of Modern.js.</p>
-        </a>
-        <a
-          href="https://modernjs.dev/tutorials/foundations/introduction.html"
-          target="_blank"
-          className="card"
-          rel="noreferrer"
-        >
-          <h2>
-            Tutorials
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-            />
-          </h2>
-          <p>Learn to use Modern.js to create your first application.</p>
-        </a>
-        <a
-          href="https://modernjs.dev/configure/app/usage.html"
-          target="_blank"
-          className="card"
-          rel="noreferrer"
-        >
-          <h2>
-            Config
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-            />
-          </h2>
-          <p>Find all configuration options provided by Modern.js.</p>
-        </a>
-        <a
-          href="https://github.com/web-infra-dev/modern.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card"
-        >
-          <h2>
-            Github
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-            />
-          </h2>
-          <p>View the source code of Github, feel free to contribute.</p>
-        </a>
+    <main className="flex flex-col h-[calc(100vh-52px)]">
+      <div className="flex-1 flex flex-col justify-center items-center">
+        <div className="container mx-auto px-6 text-center p-8">
+          <h1 className="text-4xl font-bold mb-2">Welcome to Our Website</h1>
+          <h2 className="text-2xl mb-8">Explore our services and offerings</h2>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Get Started
+          </button>
+        </div>
+        <footer className="bg-white mt-8">
+          <div className="container mx-auto px-6 py-4">
+            <p className="text-center text-gray-600 text-sm">
+              &copy; 2023 MyBrand. All rights reserved.
+            </p>
+          </div>
+        </footer>
       </div>
     </main>
-  </div>
+  </Fragment>
 );
 
 export default Index;

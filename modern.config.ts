@@ -1,7 +1,11 @@
+import { tailwindcssPlugin } from '@modern-js/plugin-tailwindcss';
 import { appTools, defineConfig } from '@modern-js/app-tools';
 
 // https://modernjs.dev/en/configure/app/usage
 export default defineConfig<'rspack'>({
+  dev: {
+    port: 8000,
+  },
   runtime: {
     router: true,
   },
@@ -9,5 +13,6 @@ export default defineConfig<'rspack'>({
     appTools({
       bundler: 'experimental-rspack',
     }),
+    tailwindcssPlugin(),
   ],
 });
