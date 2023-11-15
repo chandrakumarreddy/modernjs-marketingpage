@@ -15,4 +15,7 @@ export default defineConfig<'rspack'>({
     }),
     tailwindcssPlugin(),
   ],
+  html: {
+    title: 'Marketing page',
+  },
 });

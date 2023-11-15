@@ -9,7 +9,14 @@ export default function Layout() {
         <nav className="bg-white shadow">
           <div className="container mx-auto px-6 py-3">
             <div className="flex justify-between items-center">
-              <div className="text-lg font-semibold">MyBrand</div>
+              <div className="text-lg font-semibold flex items-center gap-2">
+                <img
+                  src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/modern-js-logo.svg"
+                  alt="Logo"
+                  loading="eager"
+                />
+                <p>Makers</p>
+              </div>
               <div className="hidden md:flex space-x-4">
                 <a href="#" className="text-gray-600 hover:text-gray-800">
                   Home
